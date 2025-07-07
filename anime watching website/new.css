@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181824;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #23243a;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff3571;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ff3571;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    background: #23243a;
+    margin: 30px 40px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.featured img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.featured-info {
+    padding: 30px;
+}
+
+.featured-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    color: #ff3571;
+}
+
+.featured-info p {
+    margin: 0 0 20px 0;
+    color: #ccc;
+}
+
+.featured-info button {
+    background: #ff3571;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.featured-info button:hover {
+    background: #e02e63;
+}
+
+.anime-list {
+    margin: 40px;
+}
+
+.anime-list h2 {
+    margin-bottom: 20px;
+    color: #ff3571;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.anime-card {
+    background: #23243a;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.anime-card span {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.anime-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255,53,113,0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #23243a;
+    color: #aaa;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,99 @@
+body {
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.insta-container {
+    width: 350px;
+    margin: 60px auto;
+}
+
+.insta-login {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insta-logo {
+    font-family: 'Grand Hotel', cursive, Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #262626;
+    letter-spacing: 2px;
+}
+
+.insta-login input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 9px 0 7px 8px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.insta-login button {
+    width: 100%;
+    background: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 18px 0 18px 0;
+}
+
+.divider span {
+    color: #8e8e8e;
+    font-size: 13px;
+    margin: 0 18px;
+}
+
+.divider:before, .divider:after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.fb-login {
+    color: #385185;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.forgot {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.signup-box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
