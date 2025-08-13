@@ -1,0 +1,79 @@
+<!-- Facebook Login Page Example -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: #fff;
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .login-container h2 {
+            color: #006eff;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 90%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 95%;
+            padding: 12px;
+            background: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-container button:hover {
+            background: #165ecb;
+        }
+        .login-container .forgot {
+            display: block;
+            margin: 15px 0 0 0;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Facebook</h2>
+        <input type="text" id="username" placeholder="Email or Phone Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Log In</button>
+        <a href="#" class="forgot">Forgotten password?</a>
+    </div>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            // Demo: Hardcoded check
+            if(username === "user@example.com" && password === "password123") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+    </script>
+</body>
+</html>
